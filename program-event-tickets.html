@@ -47,7 +47,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
    var people = [];
 
-   $.getJSON('program-tickets.json', function(data) {
+   $.getJSON('program-event-tickets.json', function(data) {
        $.each(data.value, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.FirstName + "</td>" +
            "<td>" + f.LastName + "</td>" + "<td>" + f.OrderID + "</td>" + "<td>" + f.Qty + "</td>" + "<td>" + f.Type + "</td>" + "<td>" + f.Program + "</td>" + "<td>" + f.Entry + "</td>" +
